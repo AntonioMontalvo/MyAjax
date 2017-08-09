@@ -1,0 +1,63 @@
+body {
+	font-family: monospace;
+	background-color: rgba(245, 245, 245, 0.1);
+}
+header {
+    margin: 20px;
+}
+img {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    max-width: 950px;
+}
+footer {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+span {
+	color:green;
+	margin-right: 5px;
+}
+button {
+	margin-top: 10px;
+	margin-left: 30px;
+}
+.jumbotron{
+	background-color: rgba(127, 255, 0, 0.17);
+}
+.main-content {
+    margin-left: 20px;
+}
+.col-md-4,
+.col-md-7,
+.col-md-10
+ {
+	border-style: groove;
+    margin: 30px;
+    border-color: chartreuse;
+    border-radius: 1%;
+}
+
+.col-md-3 {
+	margin: 30px;
+}
+
+.col-md-12 {
+	border-style: groove;
+    border-color: chartreuse;
+    border-radius: 1%;
+    margin-bottom: 10px;
+}
+
+.done{
+	margin: 20px;
+}
+
+#result {
+	color: blue;
+}
+
+span {
+	color: green;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" description="Understanding the way .done() deferred object method is use">
+    <title>Deferred Object .done()</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- JQuery -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+  </head>
+  <body>
+  <div class="container-fluid">
+    <div class="jumbotron">
+    <h1 class="text-right" id="here">Deferred object method .done()</h1>
+    </div>
+    <nav>
+      <ul class="nav nav-tabs">
+        <li role="navigation" class="active"><a href="../ajaxIntro.html">Introducing Ajax</a></li>
+        <li role="navigation" class="active" ><a href="#">Deferred object method .done()</a></li>
+        <li role="navigation" class="active"><a href="../my-first-ajax/first-ajax.html">Using Ajax</a></li>
+      </ul>
+    </nav>
+    <div class="row done">
+      <div class="col-md-12">
+      <h2>Deferred Object</h2>
+        <p>The Deferred object is a chainable utility object that can register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function. After creating a Deferred object, you can use any of its own methods by either chaining directly from the object creation or saving the object in a variable and invoking one or more methods on that variable.</p>
+        <h3>deferred.done()</h3>
+        <p>Add handlers to be called when the Deferred object is resolved. When the Deferred is resolved, the doneCallbacks are called. Callbacks are executed in the order they were added</p>
+      </div>
+    </div>
+  <div class="row done">
+    <div class="col-md-12">
+    <h3>Resolve a Deferred object when the user clicks a button, triggering a number of callback functions:</h3>
+    </div>
+      <button type="button" class="btn btn-success">
+        <span class="glyphicon glyphicon-hand-right"  aria-hidden="true"></span>Discover the power of .done() 
+      </button>
+    
+    <div class="col-md-12">
+      <h3>Here are the results. Notice that for the first time we are getting them without refreshing the page. All processing happens in the background thanks to the Deferred Object. Understanding this is key to how we will use Ajax.</h3>
+      <p></p>
+      <img src="../images/done.png" class="img-responsive img-thumbnai center-block" alt="Responsive image">
+    </div>
+  </div>
+  </div> 
+  </div>  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="done.js" type="text/javascript"></script>
+    </body>
+</html>
+ 

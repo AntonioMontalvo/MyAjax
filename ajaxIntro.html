@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" description="IntroducingjQuery's AJAX. What it is and why we use it">
+    <title>An introduction to Ajax</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JQuery -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+  </head>
+  <body>
+  <div class="container-fluid">
+    <div class="jumbotron">
+    <h1 class="text-right" id="here">Introducing Ajax!</h1>
+    </div>
+    <nav>
+      <ul class="nav nav-tabs">
+        <li role="navigation" class="active"><a href="#">Introducing Ajax</a></li>
+        <li role="navigation" class="active" ><a href="deferred.done/done.html">Deferred object method .done()</a></li>
+        <li role="navigation" class="active"><a href="my-first-ajax/first-ajax.html">Using Ajax</a></li>
+      </ul>
+    </nav>
+   <div class="row done">
+     <div class="col-md-12">
+     <h2>Ajax in a nutshell.</h2>
+       <p>Creating a modern web application requires an interrupted flow much like the one offered by the mayority of Desktop based application where you expect the display contents of your programs to remain visible while the interfce elements continue to responding to the users commands, as well as all computing processes happening in the background without being noticed.</p>
+       <p>Why is Ajax so useful? The Ajax framework creates this extra functionality for processing between the web page and the server. It intercepts any request from the user and handles the response from the server asynchronously.</p>
+     </div>
+     <div class="col-md-12">
+     <h2>jQuery to the rescue.</h2>
+       <p>Implementing Ajax from scratch is tedious work. Fortunately for us jQuery solves the issue with jQuery <em>methods</em> for performing Ajax calls to the server</p>
+       <p>At this point if you have any doubts about Callbacks, I recommend you spend some time refreshing this concept as it is the base of Ajax and Node.js</p>
+       <p>Remember, all of this is javaScript! Even if we'll end up using the jQuery library we must understand the basic undelying concept behind it. Microsoft developed the XMLHttpRequest object to interact with servers. It was later adopted by Apple, Modzila and Google. The XMLHttpRequest constructor must be called before any other method calls like this: <code>var myRequest = new XMLHttpRequest();</code></p>
+       <p>The jQuery XMLHttpRequest (jqXHR) object is a superset of the browser's native XMLHttpRequest object. jQuery's $.ajax() function underlies all Ajax requests sent to the server. The jqXHR objects returned by $.ajax() implements the Promise interface, giving them all the properties, methods, and behavior of a Promise (see Deferred object for more information). These methods take one or more function arguments that are called when the $.ajax() request terminates. This allows you to assign multiple callbacks on a single request, and even to assign callbacks after the request may have completed. More importantly, we can use other jQuery DeferredObject methods like .done(), .fail(), .always(), .then()</p>
+     </div>
+  </div>
+   
+  </div>  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="ajax.js" type="text/javascript"></script>
+    </body>
+</html>
+ 
